@@ -1,6 +1,5 @@
 function whosnext(persons, now) {
-  // Write your code here
-
+  
 }
 
 const { assert } = require('chai');
