@@ -1,6 +1,10 @@
 function capitalize(string) {
-  // Write your code here
+  let sub = string.split(" ");
 
+  return sub.map(word =>
+    String(word).charAt(0).toUpperCase() +
+    String(word).slice(1)
+  ).join(" ");
 }
 
 
