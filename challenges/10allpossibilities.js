@@ -1,5 +1,6 @@
 function isAllPossibilities(array) {
-  // Write your code here
+  // gesucht ist array länge soll gleich sein wie zahlen in ihm
+  return array.every((v, i) => array.includes(i))
 
 }
 
