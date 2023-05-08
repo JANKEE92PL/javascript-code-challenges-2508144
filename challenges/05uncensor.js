@@ -1,11 +1,13 @@
 function uncensor(infected, remedy) {
-  // Write your code here
+
+  const cure = [...remedy];
+  return [...infected].map(elm => elm === "*" ? cure.shift() : elm).join("")
 
 }
 
 
-const { assert } = require('chai'); 
-describe("Tests", function() {
+const { assert } = require('chai');
+describe("Tests", function () {
   it("tests", () => {
     assert.deepEqual(uncensor('H*l** W*l*', 'aloet'), 'Hallo Welt');
     assert.deepEqual(uncensor('G*h*im*r T*xt', 'eeee'), 'Geheimer Text');
