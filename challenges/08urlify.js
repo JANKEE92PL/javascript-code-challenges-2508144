@@ -1,7 +1,5 @@
 function urlify(s) {
-  // Write your code here
-
-  
+  return encodeURI(s)
 }
 
 const { assert } = require('chai');
