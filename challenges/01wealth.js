@@ -1,6 +1,7 @@
 function redistributeWealth(wealth) {
-  // Write your code here
-
+  let sum = wealth.reduce((pv, cv) => pv + cv, 0);
+  let distributed = sum / wealth.length
+  return wealth.fill(distributed)
 }
 
 
